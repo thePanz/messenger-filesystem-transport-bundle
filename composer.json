@@ -1,0 +1,31 @@
+{
+  "name": "pnz/messenger-filesystem-transport-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Bundle for the filesystem messenger transport.",
+  "keywords": ["messenger", "queue", "filesystem", "symfony", "bundle"],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Pnz\\Messenger\\FilesystemTransportBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pnz\\Messenger\\FilesystemTransportBundle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "pnz/messenger-filesystem-transport": "^0.1.0",
+    "symfony/config": "^4.1",
+    "symfony/dependency-injection": "^4.1",
+    "symfony/http-kernel": "^4.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
