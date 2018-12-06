@@ -2,8 +2,7 @@ services:
     pnz.messenger.filesystem_transport.factory:
         class: 'Pnz\Messenger\FilesystemTransport\FilesystemTransportFactory'
         arguments:
-            $encoder: '@messenger.transport.encoder'
-            $decoder: '@messenger.transport.decoder'
+            $serializer: '@messenger.transport.serializer'
             $filesystem: '@filesystem'
             $lockFactory: '@lock.factory'
         tags: ['messenger.transport_factory']

@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "pnz/messenger-filesystem-transport": "^0.1.0",
+    "pnz/messenger-filesystem-transport": "0.2.x-dev",
     "symfony/config": "^4.1",
     "symfony/dependency-injection": "^4.1",
     "symfony/http-kernel": "^4.1"
@@ -28,7 +28,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.1.x-dev"
+      "dev-master": "0.2.x-dev"
     }
   }
 }
