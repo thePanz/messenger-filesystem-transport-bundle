@@ -22,8 +22,8 @@ Configure the Filesystem transport:
 #  config/packages/messenger.yaml
 parameters:
   # Default ENV value: the queue messages will be stored in the `var/queue` folder,
-  # The trailing `/` is required for match the `filesystem://` schema
-  env(MESSENGER_TRANSPORT_DSN): "filesystem:/%kernel.project_dir%/var/queue"
+  # The trailing `//` is required for match the `filesystem://` schema
+  env(MESSENGER_TRANSPORT_DSN): "filesystem://%kernel.project_dir%/var/queue"
 
 framework:
     messenger:
@@ -48,5 +48,5 @@ Example:
 # .env
 
 # Enable compression, and sleep for 0.8 seconds during loops if the queue is empty
-MESSENGER_TRANSPORT_DSN="filesystem:/%kernel.project_dir%/var/queue/default?compress=true&loop_sleep=800000"
+MESSENGER_TRANSPORT_DSN="filesystem://%kernel.project_dir%/var/queue/default?compress=true&loop_sleep=800000"
 ```
