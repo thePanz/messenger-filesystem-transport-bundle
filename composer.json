@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "pnz/messenger-filesystem-transport": "0.2.x-dev",
+    "pnz/messenger-filesystem-transport": "*",
     "symfony/config": "^4.1",
     "symfony/dependency-injection": "^4.1",
     "symfony/http-kernel": "^4.1"
